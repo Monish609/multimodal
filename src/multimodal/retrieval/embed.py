@@ -1,4 +1,4 @@
-from ingestion.datahandler import pdf_loader,split_docs
+from multimodal.ingestion.datahandler import pdf_loader,split_docs
 from langchain_ollama import OllamaEmbeddings
 from langchain_postgres import PGVector
 from langchain_core.documents import Document

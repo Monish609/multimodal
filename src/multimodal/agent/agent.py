@@ -1,8 +1,7 @@
 from dotenv import load_dotenv
 import os
-
 from langchain_ollama import ChatOllama
-from model import get_model, get_response
+from mulitmodal.model import get_model, get_response
 
 load_dotenv()
 

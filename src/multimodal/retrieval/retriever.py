@@ -1,7 +1,7 @@
 from langchain_core.documents import Document
-from langchain_community.vectorstores import PGVector
+from langchain_postgres import PGVector
 
-def similarity_search(query:str,vector_store:PGVector,k:int = 5)-> list[Document]:
+def similarity_search(query:str,vector_store:PGVector,k:int = 5)-> list[list[Document],float]:
     """
         Top K result from document
     """
