@@ -34,12 +34,3 @@ def embed_document(docs:list[Document],vector_store:PGVector):
     """
     doc_ids = vector_store.add_documents(docs)
     return doc_ids
-
-
-def similarity_search(query:str,vector_store:PGVector)-> list[Document]:
-    """
-        Top K result from document
-    """
-    result = vector_store.similarity_search(query=query,k=5)
-
-    return result
