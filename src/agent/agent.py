@@ -37,4 +37,3 @@ def main():
     improved_prompt = improve_prompt(llm, user_input)
     response = get_response(llm, improved_prompt)
     print(f"Assistant: {response}")
-
